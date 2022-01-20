@@ -37,11 +37,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           body: Center(
-            child: Image(
-              image: AssetImage(
-                'assets/outer_space.png',
-              ),
-            ),
+            child:
+                Image(image: AssetImage('assets/sun.jpg'), fit: BoxFit.cover),
           ),
         ),
         if (_showDrawer)
