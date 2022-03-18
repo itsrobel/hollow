@@ -40,11 +40,11 @@ class _ChatScreenState extends State<ChatScreen> {
     return Stack(
       children: [
         Scaffold(
-          backgroundColor: Color(0xff251F34),
+          backgroundColor: Color(0xFF44475a),
           appBar: AppBar(
             title: Text('Chat'),
             centerTitle: true,
-            backgroundColor: Color(0xff251F34),
+            backgroundColor: Color(0xFF282a36),
             actions: [
               IconButton(
                 icon: const Icon(Icons.add_comment),
@@ -58,19 +58,20 @@ class _ChatScreenState extends State<ChatScreen> {
           ),
           floatingActionButton: FloatingActionButton(
             onPressed: showDrawer,
-            backgroundColor: Color(0xff251F34),
+            backgroundColor: Color(0xFF282a36),
             child: Icon(
               Icons.menu_rounded,
             ),
           ),
           body: new Stack(children: <Widget>[
-            new Container(
-              decoration: new BoxDecoration(
-                image: new DecorationImage(
-                  image: new AssetImage("assets/sun.jpg"),
-                ),
-              ),
-            ),
+            // new Container(
+
+            //   decoration: new BoxDecoration(
+            //     image: new DecorationImage(
+            //       image: new AssetImage("assets/698610.jpg"),
+            //     ),
+            //   ),
+            // ),
             new Padding(
               padding: EdgeInsets.only(top: 16, left: 16, right: 16),
               child: TextField(

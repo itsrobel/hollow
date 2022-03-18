@@ -49,7 +49,7 @@ class _ConversationListState extends State<ConversationList> {
                           Text(
                             widget.name,
                             style: TextStyle(
-                                fontSize: 16, color: Color(0xff14DAE2)),
+                                fontSize: 16, color: Color(0xFF8be9fd)),
                           ),
                           SizedBox(
                             height: 6,
@@ -73,7 +73,7 @@ class _ConversationListState extends State<ConversationList> {
             Text(
               widget.time,
               style: TextStyle(
-                  color: Color(0xff14DAE2),
+                  color: Color(0xFFbd93f9),
                   fontSize: 12,
                   fontWeight: widget.isMessageRead
                       ? FontWeight.bold

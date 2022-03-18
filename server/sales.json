@@ -1,0 +1,16 @@
+{
+    "anchovyApartment": {
+        "SanFrancisco": 3500,
+        "Austin": 4000,
+        "Tokyo": 1500
+    },
+    "burgerBungalow": {
+        "NewYork": 4500,
+        "Miami": 2500,
+        "Beijing": 1000
+    },
+    "chickenCastle": {
+        "Miami": 1000,
+        "Tokyo": 5000
+    }
+}

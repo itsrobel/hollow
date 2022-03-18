@@ -23,25 +23,22 @@ class _DoctorScreenState extends State<DoctorScreen> {
     return Stack(
       children: [
         Scaffold(
-          backgroundColor: Colors.white,
+          backgroundColor: Color(0xFF44475a),
           appBar: AppBar(
             title: Text('Doctors'),
             centerTitle: true,
-            backgroundColor: Color(0xff251F34),
+            backgroundColor: Color(0xFF282a36),
           ),
           floatingActionButton: FloatingActionButton(
             onPressed: showDrawer,
-            backgroundColor: Color(0xff251F34),
+            backgroundColor: Color(0xFF282a36),
             child: Icon(
               Icons.menu_rounded,
             ),
           ),
           body: Center(
             child: Image(
-              image: AssetImage(
-                'assets/outer_space.png',
-              ),
-            ),
+                image: AssetImage('assets/698610.jpg'), fit: BoxFit.cover),
           ),
         ),
         if (_showDrawer)

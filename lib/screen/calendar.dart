@@ -23,11 +23,11 @@ class _HomeScreenState extends State<CalendarScreen> {
     return Stack(
       children: [
         Scaffold(
-          backgroundColor: Colors.white,
+          backgroundColor: Color(0xFF44475a),
           appBar: AppBar(
-            title: Text('Home'),
+            title: Text('Calendar'),
             centerTitle: true,
-            backgroundColor: Color(0xff251F34),
+            backgroundColor: Color(0xFF282a36),
           ),
           floatingActionButton: FloatingActionButton(
             onPressed: showDrawer,
@@ -37,12 +37,12 @@ class _HomeScreenState extends State<CalendarScreen> {
             ),
           ),
           body: Center(
-            child: Image(
-              image: AssetImage(
-                'assets/outer_space.png',
+              // child: Image(
+              //   image: AssetImage(
+              //     'assets/outer_space.png',
+              //   ),
+              // ),
               ),
-            ),
-          ),
         ),
         if (_showDrawer)
           DrawerWidget(

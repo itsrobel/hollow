@@ -25,7 +25,6 @@ class _DrawerWidgetState extends State<DrawerWidget>
   double backgroundOpacity = 0;
   bool isCollapsed = true;
   bool isCollapsedAfterSec = true;
-
   void initializeAnimation() {
     _controller = AnimationController(
       duration: Duration(
@@ -114,7 +113,7 @@ class _DrawerWidgetState extends State<DrawerWidget>
                   bottom: height * .05,
                 ),
                 decoration: BoxDecoration(
-                  color: Color(0xff251F34),
+                  color: Color(0xFF44475a),
                   borderRadius: BorderRadius.circular(
                     20,
                   ),
