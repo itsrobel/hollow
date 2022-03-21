@@ -16,25 +16,26 @@ class Login extends StatefulWidget {
 class _LoginFormState extends State<Login> {
   // Create a text controller. Later, use it to retrieve the
   // current value of the TextField.
-  final EmailController = TextEditingController();
-  final PasswordController = TextEditingController();
+  TextEditingController emailController = new TextEditingController();
+  TextEditingController passwordController = new TextEditingController();
   @override
   void dispose() {
     // Clean up the controller when the widget is removed from the
     // widget tree.
-    EmailController.dispose();
-    PasswordController.dispose();
+    emailController.dispose();
+    passwordController.dispose();
     super.dispose();
   }
 
-  void _printLatestValue(TextEditingController controler) {
-    print('Second text field: ${controler.text}');
+  void printLatestValue() {
+    print('Second text field: ${emailController.text}');
   }
 
   void initState() {
     super.initState();
 
     // Start listening to changes.
+    emailController.addListener(printLatestValue);
     // EmailController.addListener(_printLatestValue(EmailController));
     // PasswordController.addListener(_printLatestValue(PasswordController));
   }
@@ -128,7 +129,7 @@ class _LoginFormState extends State<Login> {
                               //     hintText: "Enter your email address",
                               //     prefixIcon: Icons.login_rounded),
                               TextField(
-                                controller: EmailController,
+                                controller: emailController,
                                 style: TextStyle(
                                     color: Constants.foregroundPrimary),
                                 decoration: InputDecoration(
@@ -158,7 +159,8 @@ class _LoginFormState extends State<Login> {
                                   style: TextStyle(
                                       color: Constants.foregroundHeading)),
                               TextField(
-                                controller: PasswordController,
+                                controller: passwordController,
+                                obscureText: true,
                                 style: TextStyle(
                                     color: Constants.foregroundPrimary),
                                 decoration: InputDecoration(
@@ -182,6 +184,16 @@ class _LoginFormState extends State<Login> {
                               ),
                               SizedBox(
                                 height: 15.0,
+                              ),
+                              AppButton(
+                                text: "Log In",
+                                type: ButtonType.PRIMARY,
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => Login()));
+                                },
                               ),
                               GestureDetector(
                                 onTap: () {},
@@ -217,13 +229,5 @@ class _LoginFormState extends State<Login> {
         ),
       ),
     );
-
-    // Fill this out in the next step.
   }
 }
-
-// class Login extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//   }
-// }
