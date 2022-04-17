@@ -12,6 +12,7 @@ const schema = new graphql.GraphQLSchema({
                     name: { type: graphql.GraphQLString },
                 },
                 resolve: (_, {name}) => restaurantDataService.getSales(name),
+                // resolve: (_, {name}) => `Hello ${name}`,
             },
         },
     }),

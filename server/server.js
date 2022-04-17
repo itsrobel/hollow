@@ -13,10 +13,8 @@ const app = express();
 const uri = "mongodb://localhost:27017/testData";
 mongoose
     .connect(uri, {
-      useCreateIndex: true,
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useFindAndModify: false,
     })
     .then(
       () => {

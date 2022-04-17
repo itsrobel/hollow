@@ -37,8 +37,8 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
 
   @override
   Widget build(BuildContext context) {
-    final user = ModalRoute.of(context)!.settings.arguments as ChatData;
-    print(user);
+    final user_id = ModalRoute.of(context)!.settings.arguments as String;
+    print(user_id);
     return Scaffold(
         appBar: AppBar(
           elevation: 0,
@@ -61,10 +61,10 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                   SizedBox(
                     width: 2,
                   ),
-                  CircleAvatar(
-                    backgroundImage: AssetImage(user.imageUrl.toString()),
-                    maxRadius: 20,
-                  ),
+                  // CircleAvatar(
+                  //   backgroundImage: AssetImage(user.imageUrl.toString()),
+                  //   maxRadius: 20,
+                  // ),
                   SizedBox(
                     width: 12,
                   ),
@@ -73,20 +73,20 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Text(
-                          user.name.toString(),
-                          style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.white),
-                        ),
-                        SizedBox(
-                          height: 6,
-                        ),
-                        Text(
-                          "Online",
-                          style: TextStyle(color: Colors.white, fontSize: 13),
-                        ),
+                        // Text(
+                        //   user.name.toString(),
+                        //   style: TextStyle(
+                        //       fontSize: 16,
+                        //       fontWeight: FontWeight.w600,
+                        //       color: Colors.white),
+                        // ),
+                        // SizedBox(
+                        //   height: 6,
+                        // ),
+                        // Text(
+                        //   "Online",
+                        //   style: TextStyle(color: Colors.white, fontSize: 13),
+                        // ),
                       ],
                     ),
                   ),
@@ -101,36 +101,36 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
         ),
         body: Stack(
           children: <Widget>[
-            ListView.builder(
-              itemCount: _results.length,
-              shrinkWrap: true,
-              padding: EdgeInsets.only(top: 10, bottom: 10),
-              physics: NeverScrollableScrollPhysics(),
-              itemBuilder: (context, index) {
-                return Container(
-                  padding:
-                      EdgeInsets.only(left: 14, right: 14, top: 10, bottom: 10),
-                  child: Align(
-                    alignment: (_results[index].messageType == "receiver"
-                        ? Alignment.topLeft
-                        : Alignment.topRight),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: (_results[index].messageType == "receiver"
-                            ? Colors.grey.shade200
-                            : Colors.blue[200]),
-                      ),
-                      padding: EdgeInsets.all(16),
-                      child: Text(
-                        _results[index].messageContent,
-                        style: TextStyle(fontSize: 15),
-                      ),
-                    ),
-                  ),
-                );
-              },
-            ),
+            // ListView.builder(
+            //   itemCount: _results.length,
+            //   shrinkWrap: true,
+            //   padding: EdgeInsets.only(top: 10, bottom: 10),
+            //   physics: NeverScrollableScrollPhysics(),
+            //   itemBuilder: (context, index) {
+            // return Container(
+            //   padding:
+            //       EdgeInsets.only(left: 14, right: 14, top: 10, bottom: 10),
+            //   child: Align(
+            //     alignment: (_results[index].messageType == "receiver"
+            //         ? Alignment.topLeft
+            //         : Alignment.topRight),
+            //     child: Container(
+            //       decoration: BoxDecoration(
+            //         borderRadius: BorderRadius.circular(20),
+            //         color: (_results[index].messageType == "receiver"
+            //             ? Colors.grey.shade200
+            //             : Colors.blue[200]),
+            //       ),
+            //       padding: EdgeInsets.all(16),
+            //       child: Text(
+            //         _results[index].messageContent,
+            //         style: TextStyle(fontSize: 15),
+            //       ),
+            //     ),
+            //   ),
+            // );
+            //   },
+            // ),
             Align(
               alignment: Alignment.bottomLeft,
               child: Container(

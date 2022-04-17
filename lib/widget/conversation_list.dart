@@ -5,11 +5,10 @@ import 'package:flutter_custom_drawer/screen/chat_detail.dart';
 class ConversationList extends StatefulWidget {
   String name;
   String messageText;
-  String imageUrl;
+  // String imageUrl;
   String time;
   bool isMessageRead;
-  ConversationList(this.name, this.messageText, this.imageUrl, this.time,
-      this.isMessageRead);
+  ConversationList(this.name, this.messageText, this.time, this.isMessageRead);
   @override
   _ConversationListState createState() => _ConversationListState();
 }
@@ -17,7 +16,7 @@ class ConversationList extends StatefulWidget {
 class _ConversationListState extends State<ConversationList> {
   @override
   Widget build(BuildContext context) {
-    ChatData user = ChatData(widget.name, widget.imageUrl);
+    ChatData user = ChatData(widget.name);
     return GestureDetector(
       onTap: () {
         Navigator.push(
@@ -33,10 +32,10 @@ class _ConversationListState extends State<ConversationList> {
             Expanded(
               child: Row(
                 children: <Widget>[
-                  CircleAvatar(
-                    backgroundImage: AssetImage(widget.imageUrl),
-                    maxRadius: 30,
-                  ),
+                  // CircleAvatar(
+                  //   backgroundImage: AssetImage(widget.imageUrl),
+                  //   maxRadius: 30,
+                  // ),
                   SizedBox(
                     width: 16,
                   ),
