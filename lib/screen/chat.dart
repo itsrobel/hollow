@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_drawer/widget/drawer.dart';
-import 'package:flutter_custom_drawer/models/chat_users_model.dart';
-import 'package:flutter_custom_drawer/widget/conversation_list.dart';
+import 'package:hollow_flutter/widget/drawer.dart';
+import 'package:hollow_flutter/models/chat_users_model.dart';
+import 'package:hollow_flutter/widget/conversation_list.dart';
 
 import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;

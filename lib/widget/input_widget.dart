@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_custom_drawer/utils/constants.dart';
+import 'package:hollow_flutter/utils/constants.dart';
 
 class InputWidget extends StatelessWidget {
   final String hintText;

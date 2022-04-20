@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_drawer/widget/drawer.dart';
+import 'package:hollow_flutter/widget/drawer.dart';
 // import 'package:flutter_icons/flutter_icons.dart';
 
 class HomeScreen extends StatefulWidget {

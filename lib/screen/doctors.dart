@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_drawer/widget/drawer.dart';
+import 'package:hollow_flutter/widget/drawer.dart';
 
 class DoctorScreen extends StatefulWidget {
   const DoctorScreen({Key? key}) : super(key: key);

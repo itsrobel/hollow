@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_drawer/models/chat_data_model.dart';
-import 'package:flutter_custom_drawer/screen/chat_detail.dart';
+import 'package:hollow_flutter/models/chat_data_model.dart';
+import 'package:hollow_flutter/screen/chat_detail.dart';
 
 class ConversationList extends StatefulWidget {
   String name;

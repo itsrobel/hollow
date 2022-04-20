@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_drawer/screen/calendar.dart';
-import 'package:flutter_custom_drawer/screen/chat.dart';
-import 'package:flutter_custom_drawer/screen/doctors.dart';
-import 'package:flutter_custom_drawer/screen/home.dart';
-import 'package:flutter_custom_drawer/screen/login.dart';
-import 'package:flutter_custom_drawer/screen/map.dart';
-import 'package:flutter_custom_drawer/widget/drawer_item.dart';
-import 'package:flutter_custom_drawer/widget/drawer_user.dart';
+import 'package:hollow_flutter/screen/calendar.dart';
+import 'package:hollow_flutter/screen/chat.dart';
+import 'package:hollow_flutter/screen/doctors.dart';
+import 'package:hollow_flutter/screen/home.dart';
+import 'package:hollow_flutter/screen/login.dart';
+import 'package:hollow_flutter/screen/map.dart';
+import 'package:hollow_flutter/widget/drawer_item.dart';
+import 'package:hollow_flutter/widget/drawer_user.dart';
 
 class DrawerWidget extends StatefulWidget {
   const DrawerWidget({Key? key, required this.closeFunction}) : super(key: key);
